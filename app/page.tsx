@@ -12,14 +12,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           
           {/* LOGO */}
-          <div className="text-2xl font-bold tracking-tight flex items-center relative">
+          <a href="/" className="text-4xl font-bold tracking-tight flex items-center relative">
             <span className="text-slate-900">Hello</span>
             <span className="text-orange-500">VA</span>
-            {/* Small orange triangle accent inspired by the logo */}
-            <svg className="w-3 h-3 text-orange-500 absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24">
+            {/* Scaled the triangle to match the new larger text size */}
+            <svg className="w-4 h-4 text-orange-500 absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M24 12l-24 12V0z" />
             </svg>
-          </div>
+          </a>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
             {/* UPDATED LINKS HERE */}
