@@ -22,8 +22,9 @@ export default function Home() {
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-            <a href="#services" className="hover:text-orange-500 transition">Services</a>
-            <a href="#why-us" className="hover:text-orange-500 transition">Why Us</a>
+            {/* UPDATED LINKS HERE */}
+            <a href="/services" className="hover:text-orange-500 transition">Services</a>
+            <a href="/about" className="hover:text-orange-500 transition">About Us</a>
             <a href="#process" className="hover:text-orange-500 transition">How It Works</a>
             <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg transition shadow-md shadow-orange-500/20 font-semibold">
               Book a Call
@@ -50,7 +51,8 @@ export default function Home() {
               <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-orange-500/30 transition text-center text-lg">
                 Book a Free Discovery Call
               </a>
-              <a href="#services" className="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-semibold transition text-center text-lg">
+              {/* UPDATED LINK HERE */}
+              <a href="/services" className="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-semibold transition text-center text-lg">
                 Explore Services
               </a>
             </div>
@@ -67,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Hero Graphic - Kept light and clean */}
+          {/* Hero Graphic */}
           <div className="relative hidden lg:block">
             <div className="absolute inset-0 bg-orange-200 blur-[100px] opacity-40 rounded-full"></div>
             <img 
@@ -125,114 +127,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PREMIUM SERVICES SECTION */}
-      <section id="services" className="py-32 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">A Scalable Business Support System</h2>
-            <p className="text-xl text-slate-500">
-              We connect you with reliable professionals to handle day-to-day execution, structured exactly how your growing business needs it.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white border border-slate-100 p-10 rounded-3xl hover:shadow-xl hover:border-orange-200 transition duration-300 group">
-              <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Operations Support</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Administrative Support</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Customer Support & Chat</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Workflow Management</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> E-Commerce Operations</li>
-              </ul>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-white border border-slate-100 p-10 rounded-3xl hover:shadow-xl hover:border-orange-200 transition duration-300 group">
-              <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Growth Support</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Sales & CRM Support</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Marketing Execution</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Lead Generation</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Appointment Setting</li>
-              </ul>
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-white border border-slate-100 p-10 rounded-3xl hover:shadow-xl hover:border-orange-200 transition duration-300 group">
-              <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Content & Creative</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Social Media Management</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Content Creation</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Graphic Design (Canva)</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div> Basic Video Editing</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY HELLOVA SECTION */}
-      <section id="why-us" className="py-32 max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">More Than Just Placement</h2>
-          <p className="text-xl text-slate-500 max-w-2xl mx-auto">
-            We focus on long-term operational success, not just filling a seat. Here is what makes the HelloVA approach different.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="flex gap-6 items-start p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-            <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">We Focus on Fit</h3>
-              <p className="text-slate-500 leading-relaxed">We match based on specific skills, communication style, and cultural alignment to ensure a seamless integration into your current team.</p>
-            </div>
-          </div>
-
-          <div className="flex gap-6 items-start p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-            <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">We Save You Time</h3>
-              <p className="text-slate-500 leading-relaxed">No job posts, no filtering through hundreds of resumes, no endless interviews. We present only the most qualified, pre-vetted candidates.</p>
-            </div>
-          </div>
-
-          <div className="flex gap-6 items-start p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-            <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">We Prioritize Reliability</h3>
-              <p className="text-slate-500 leading-relaxed">We focus entirely on consistency, accountability, and long-term collaboration. Our VAs genuinely care about your company&apos;s success.</p>
-            </div>
-          </div>
-
-          <div className="flex gap-6 items-start p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-            <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">We Understand Remote Work</h3>
-              <p className="text-slate-500 leading-relaxed">We help you set clear expectations and communication rhythms to ensure a highly productive working relationship right from day one.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* PROCESS SECTION */}
       <section id="process" className="py-32 bg-slate-50 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-6">
@@ -276,7 +170,8 @@ export default function Home() {
             <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-orange-500 hover:bg-orange-400 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-lg shadow-orange-500/20 transition w-full sm:w-auto">
               Book a Free Strategy Call
             </a>
-            <a href="#services" className="bg-slate-800 hover:bg-slate-700 text-white px-10 py-5 rounded-xl font-bold text-lg border border-slate-700 transition w-full sm:w-auto">
+            {/* UPDATED LINK HERE */}
+            <a href="/services" className="bg-slate-800 hover:bg-slate-700 text-white px-10 py-5 rounded-xl font-bold text-lg border border-slate-700 transition w-full sm:w-auto">
               Get Matched with a VA
             </a>
           </div>
@@ -299,8 +194,9 @@ export default function Home() {
           <div>
             <h4 className="text-slate-900 font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
             <ul className="space-y-4 text-slate-500 font-medium">
-              <li><a href="#services" className="hover:text-orange-500 transition">Services</a></li>
-              <li><a href="#why-us" className="hover:text-orange-500 transition">Why Us</a></li>
+              {/* UPDATED LINKS HERE */}
+              <li><a href="/services" className="hover:text-orange-500 transition">Services</a></li>
+              <li><a href="/about" className="hover:text-orange-500 transition">About Us</a></li>
               <li><a href="#process" className="hover:text-orange-500 transition">How It Works</a></li>
             </ul>
           </div>
