@@ -21,12 +21,12 @@ export default function Services() {
       {/* MINI NAV */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <a href="/" className="text-4xl font-bold tracking-tight flex items-center relative">
-            <span className="text-black">Hello</span>
-            <span className="text-[#F58220]">VA</span>
-            {/* Corrected Sharp Wedge Triangle */}
-            <svg className="w-4 h-4 text-[#F58220] absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24"><path d="M0 4h24L0 16z" /></svg>
+          
+          {/* LOGO */}
+          <a href="/" className="flex items-center">
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-10 md:h-12 w-auto" />
           </a>
+
           <div className="hidden md:flex gap-8 font-semibold">
             <a href="/" className="hover:text-[#F58220] transition">Home</a>
             <a href="/about" className="hover:text-[#F58220] transition">About Us</a>
@@ -78,12 +78,12 @@ export default function Services() {
       <footer className="bg-black pt-20 pb-10 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
-            <a href="/" className="text-3xl font-bold tracking-tight flex items-center relative mb-6 w-fit">
-              <span className="text-white">Hello</span>
-              <span className="text-[#F58220]">VA</span>
-              {/* Corrected Sharp Wedge Triangle */}
-              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M0 4h24L0 16z" /></svg>
+            
+            {/* FOOTER LOGO */}
+            <a href="/" className="flex items-center mb-6 w-fit">
+              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-14 md:h-16 w-auto" />
             </a>
+
             <p className="text-gray-400 max-w-sm">
               Remote support solutions for growing businesses.
             </p>
