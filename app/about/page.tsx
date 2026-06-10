@@ -9,12 +9,9 @@ export default function About() {
       {/* MINI NAV */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          
-          {/* LOGO */}
           <a href="/" className="flex items-center">
             <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-20 w-auto" />
           </a>
-
           <div className="hidden md:flex gap-8 font-semibold">
             <a href="/" className="hover:text-[#F58220] transition">Home</a>
             <a href="/services" className="hover:text-[#F58220] transition">Services</a>
@@ -30,7 +27,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-6 tracking-tight">Helping Businesses Grow with Reliable Remote Support</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            At HelloVA, we believe business owners shouldn’t have to do everything alone. As companies grow, so do the demands — emails, operations, customer support, scheduling, marketing tasks, follow-ups, and countless day-to-day responsibilities that pull founders away from the bigger picture.
+            At HelloVA, we believe business owners shouldn&apos;t have to do everything alone. As companies grow, so do the demands — emails, operations, customer support, scheduling, marketing tasks, follow-ups, and countless day-to-day responsibilities that pull founders away from the bigger picture.
           </p>
         </div>
       </section>
@@ -83,23 +80,20 @@ export default function About() {
 
       {/* CTA */}
       <section className="py-24 text-center px-6 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-black mb-6">Let’s Build Your Remote Team</h2>
-        <p className="text-xl text-gray-600 mb-10">Whether you’re overwhelmed with daily tasks or preparing to scale your business, HelloVA is here to help you find reliable remote support you can trust. Delegate smarter. Operate smoother. Grow faster.</p>
+        <h2 className="text-4xl font-extrabold text-black mb-6">Let&apos;s Build Your Remote Team</h2>
+        <p className="text-xl text-gray-600 mb-10">Whether you&apos;re overwhelmed with daily tasks or preparing to scale your business, HelloVA is here to help you find reliable remote support you can trust. Delegate smarter. Operate smoother. Grow faster.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] hover:bg-[#d66f1b] text-white px-8 py-4 rounded font-bold transition">Book a Free Consultation</a>
         </div>
       </section>
 
-      {/* FOOTER - White Theme */}
+      {/* FOOTER */}
       <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-200">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-200 pb-16">
           <div className="col-span-1 md:col-span-2">
-            
-            {/* FOOTER LOGO */}
             <a href="/" className="flex items-center mb-6 w-fit">
               <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-20 md:h-24 w-auto" />
             </a>
-
             <p className="text-gray-600 max-w-sm">
               Remote support solutions for growing businesses.
             </p>

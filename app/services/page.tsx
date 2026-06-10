@@ -21,12 +21,9 @@ export default function Services() {
       {/* MINI NAV */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          
-          {/* LOGO */}
           <a href="/" className="flex items-center">
             <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-20 w-auto" />
           </a>
-
           <div className="hidden md:flex gap-8 font-semibold">
             <a href="/" className="hover:text-[#F58220] transition">Home</a>
             <a href="/about" className="hover:text-[#F58220] transition">About Us</a>
@@ -74,16 +71,13 @@ export default function Services() {
         </div>
       </section>
 
-      {/* FOOTER - White Theme */}
+      {/* FOOTER */}
       <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-200">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-200 pb-16">
           <div className="col-span-1 md:col-span-2">
-            
-            {/* FOOTER LOGO */}
             <a href="/" className="flex items-center mb-6 w-fit">
               <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-20 md:h-24 w-auto" />
             </a>
-
             <p className="text-gray-600 max-w-sm">
               Remote support solutions for growing businesses.
             </p>

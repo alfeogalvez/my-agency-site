@@ -6,15 +6,12 @@ export default function Home() {
   return (
     <main className={`min-h-screen bg-white text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
       
-      {/* NAVIGATION - Height restriction removed, padding adjusted */}
+      {/* NAVIGATION */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          
-          {/* LOGO - Made significantly larger */}
           <a href="/" className="flex items-center">
             <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-20 w-auto" />
           </a>
-
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-black">
             <a href="/services" className="hover:text-[#F58220] transition">Services</a>
             <a href="/about" className="hover:text-[#F58220] transition">About Us</a>
@@ -147,7 +144,7 @@ export default function Home() {
           <div className="bg-white p-10 rounded-xl shadow-xl border border-gray-100 relative">
             <svg className="w-12 h-12 text-[#F58220] opacity-20 absolute top-6 left-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
             <div className="relative z-10 pt-6">
-              <p className="text-lg text-gray-700 italic mb-6">"HelloVA completely changed how we operate. We were drowning in admin work, and within two weeks, they matched us with a VA who took over our entire inbox and CRM. We've scaled our revenue by 30% simply because we have our time back."</p>
+              <p className="text-lg text-gray-700 italic mb-6">&quot;HelloVA completely changed how we operate. We were drowning in admin work, and within two weeks, they matched us with a VA who took over our entire inbox and CRM. We&apos;ve scaled our revenue by 30% simply because we have our time back.&quot;</p>
               <div>
                 <p className="font-bold text-black">Sarah Jenkins</p>
                 <p className="text-sm text-[#F58220] font-semibold">Founder, Marketing Agency</p>
@@ -166,9 +163,7 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col lg:flex-row justify-between relative">
-            {/* Connecting Line (Hidden on mobile) */}
             <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gray-200 z-0"></div>
-
             {[
               { step: "1", title: "Discover", desc: "We map out your needs and tasks." },
               { step: "2", title: "Match", desc: "We find the perfect pre-vetted VA." },
@@ -213,22 +208,19 @@ export default function Home() {
               <textarea rows={4} className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="Admin, customer support, email management..."></textarea>
             </div>
             <button type="button" className="w-full bg-[#F58220] hover:bg-[#d66f1b] text-white font-bold py-4 rounded transition text-lg mt-4">
-              Let’s Talk
+              Let&apos;s Talk
             </button>
           </form>
         </div>
       </section>
 
-      {/* FOOTER - Rebuilt to use a white background to perfectly blend with the JPG image */}
+      {/* FOOTER */}
       <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-200">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-200 pb-16">
           <div className="col-span-1 md:col-span-2">
-            
-            {/* FOOTER LOGO - Significantly enlarged */}
             <a href="/" className="flex items-center mb-6 w-fit">
               <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-20 md:h-24 w-auto" />
             </a>
-
             <p className="text-gray-600 max-w-sm">
               Remote support solutions for growing businesses.
             </p>
@@ -255,4 +247,12 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} HelloVA. All rights reserved.</p>
-          <div className="flex gap-6"></div>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-black transition">Privacy Policy</a>
+            <a href="#" className="hover:text-black transition">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}
