@@ -20,11 +20,11 @@ export default function Services() {
       
       {/* MINI NAV */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
           {/* LOGO */}
           <a href="/" className="flex items-center">
-            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-10 md:h-12 w-auto" />
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-20 w-auto" />
           </a>
 
           <div className="hidden md:flex gap-8 font-semibold">
@@ -74,23 +74,23 @@ export default function Services() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-black pt-20 pb-10 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
+      {/* FOOTER - White Theme */}
+      <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-200 pb-16">
           <div className="col-span-1 md:col-span-2">
             
             {/* FOOTER LOGO */}
             <a href="/" className="flex items-center mb-6 w-fit">
-              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-14 md:h-16 w-auto" />
+              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-20 md:h-24 w-auto" />
             </a>
 
-            <p className="text-gray-400 max-w-sm">
+            <p className="text-gray-600 max-w-sm">
               Remote support solutions for growing businesses.
             </p>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-            <ul className="space-y-4 text-gray-400 font-medium">
+            <h4 className="text-black font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+            <ul className="space-y-4 text-gray-600 font-medium">
               <li><a href="/services" className="hover:text-[#F58220] transition">Services</a></li>
               <li><a href="/about" className="hover:text-[#F58220] transition">About Us</a></li>
               <li><a href="/#how-it-works" className="hover:text-[#F58220] transition">How It Works</a></li>
@@ -98,8 +98,8 @@ export default function Services() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
-            <ul className="space-y-4 text-gray-400 font-medium">
+            <h4 className="text-black font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
+            <ul className="space-y-4 text-gray-600 font-medium">
               <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">support@hellova.co</a></li>
               <li><a href="https://hellova.co/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Website</a></li>
               <li><a href="https://linkedin.com/company/hellova-co" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">LinkedIn</a></li>
@@ -111,8 +111,8 @@ export default function Services() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} HelloVA. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition">Terms & Conditions</a>
+            <a href="#" className="hover:text-black transition">Privacy Policy</a>
+            <a href="#" className="hover:text-black transition">Terms & Conditions</a>
           </div>
         </div>
       </footer>
