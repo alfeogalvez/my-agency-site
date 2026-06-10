@@ -9,9 +9,12 @@ export default function About() {
       {/* MINI NAV */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center">
-            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-20 w-auto" />
+          
+          {/* HEADER LOGO - MADE MASSIVE */}
+          <a href="/" className="flex items-center shrink-0">
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-24 sm:h-28 md:h-36 lg:h-40 w-auto object-contain max-w-none" />
           </a>
+
           <div className="hidden md:flex gap-8 font-semibold">
             <a href="/" className="hover:text-[#F58220] transition">Home</a>
             <a href="/services" className="hover:text-[#F58220] transition">Services</a>
@@ -88,19 +91,22 @@ export default function About() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-200 pb-16">
+      <footer className="bg-black pt-20 pb-10 px-6 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
-            <a href="/" className="flex items-center mb-6 w-fit">
-              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-20 md:h-24 w-auto" />
+            
+            {/* FOOTER LOGO */}
+            <a href="/" className="inline-block bg-white px-6 py-3 rounded-2xl mb-6 w-fit shadow-md">
+              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-16 md:h-20 w-auto object-contain" />
             </a>
-            <p className="text-gray-600 max-w-sm">
+
+            <p className="text-gray-400 max-w-sm">
               Remote support solutions for growing businesses.
             </p>
           </div>
           <div>
-            <h4 className="text-black font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-            <ul className="space-y-4 text-gray-600 font-medium">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+            <ul className="space-y-4 text-gray-400 font-medium">
               <li><a href="/services" className="hover:text-[#F58220] transition">Services</a></li>
               <li><a href="/about" className="hover:text-[#F58220] transition">About Us</a></li>
               <li><a href="/#how-it-works" className="hover:text-[#F58220] transition">How It Works</a></li>
@@ -108,8 +114,8 @@ export default function About() {
             </ul>
           </div>
           <div>
-            <h4 className="text-black font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
-            <ul className="space-y-4 text-gray-600 font-medium">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
+            <ul className="space-y-4 text-gray-400 font-medium">
               <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">support@hellova.co</a></li>
               <li><a href="https://hellova.co/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Website</a></li>
               <li><a href="https://linkedin.com/company/hellova-co" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">LinkedIn</a></li>
@@ -121,8 +127,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} HelloVA. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-black transition">Privacy Policy</a>
-            <a href="#" className="hover:text-black transition">Terms & Conditions</a>
+            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition">Terms & Conditions</a>
           </div>
         </div>
       </footer>
