@@ -18,12 +18,12 @@ export default function Services() {
   return (
     <main className={`min-h-screen bg-gray-50 text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
       
-      {/* MINI NAV - MASSIVE HEADER LOGO */}
+      {/* MINI NAV - SCALED DOWN BY 60% */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
           <a href="/" className="flex items-center shrink-0">
-            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto object-contain max-w-none" />
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain" />
           </a>
 
           <div className="hidden md:flex gap-8 font-semibold">

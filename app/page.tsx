@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <main className={`min-h-screen bg-white text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
       
-      {/* NAVIGATION - MASSIVE HEADER LOGO */}
+      {/* NAVIGATION - SCALED DOWN BY 60% */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
           <a href="/" className="flex items-center shrink-0">
-            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto object-contain max-w-none" />
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain" />
           </a>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-black">
@@ -221,7 +221,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - LOOKING FOR TRANSPARENT PNG */}
+            {/* FOOTER LOGO - REQUIRES TRANSPARENT PNG */}
             <a href="/" className="mb-6 block w-fit">
               <img src="/logo-footer.png" alt="HelloVA Logo with Tagline" className="h-24 md:h-32 w-auto object-contain" />
             </a>
