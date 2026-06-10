@@ -78,12 +78,12 @@ export default function Services() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - Using the image with blended background */}
+           {/* FOOTER LOGO - Reduced to 25% size */}
             <a href="/" className="mb-6 block w-fit">
               <img 
-                src="/logo-footer.jpg" 
+                src="/logo-footer.png" 
                 alt="HelloVA Logo" 
-                className="h-24 md:h-32 w-auto object-contain rounded-2xl mix-blend-screen" 
+                className="max-h-12 w-auto object-contain" 
               />
             </a>
 
