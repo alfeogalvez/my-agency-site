@@ -78,13 +78,15 @@ export default function Services() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - Coded specifically for dark backgrounds */}
-            <a href="/" className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center relative mb-6 w-fit hover:opacity-80 transition">
+            {/* FOOTER LOGO - Locked position fix for the triangle */}
+            <a href="/" className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center pr-4 relative mb-6 w-fit hover:opacity-80 transition">
               <span className="text-white">Hello</span>
               <span className="text-[#F58220]">VA</span>
-              <svg className="w-4 h-4 md:w-5 md:h-5 text-[#F58220] absolute -top-1 -right-4 md:-right-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M0 4h24L0 16z" />
-              </svg>
+              <span className="absolute top-1 -right-1 text-[#F58220]">
+                <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M0 4h24L0 16z" />
+                </svg>
+              </span>
             </a>
 
             <p className="text-gray-400 max-w-sm">
