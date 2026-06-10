@@ -18,13 +18,12 @@ export default function Services() {
   return (
     <main className={`min-h-screen bg-gray-50 text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
       
-      {/* MINI NAV */}
+      {/* MINI NAV - MASSIVE HEADER LOGO */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
-          {/* HEADER LOGO - MADE MASSIVE */}
           <a href="/" className="flex items-center shrink-0">
-            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-24 sm:h-28 md:h-36 lg:h-40 w-auto object-contain max-w-none" />
+            <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto object-contain max-w-none" />
           </a>
 
           <div className="hidden md:flex gap-8 font-semibold">
@@ -79,9 +78,9 @@ export default function Services() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - Wrapped in a white pill/badge so it looks styled, not copy-pasted */}
-            <a href="/" className="inline-block bg-white px-6 py-3 rounded-2xl mb-6 w-fit shadow-md">
-              <img src="/logo-footer.jpg" alt="HelloVA Logo with Tagline" className="h-16 md:h-20 w-auto object-contain" />
+            {/* FOOTER LOGO - REQUIRES TRANSPARENT PNG */}
+            <a href="/" className="mb-6 block w-fit">
+              <img src="/logo-footer.png" alt="HelloVA Logo with Tagline" className="h-24 md:h-32 w-auto object-contain" />
             </a>
 
             <p className="text-gray-400 max-w-sm">
