@@ -78,12 +78,12 @@ export default function Services() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-           {/* FOOTER LOGO - Reduced to 25% size */}
+           {/* FOOTER LOGO - 25% size with rounded corners */}
             <a href="/" className="mb-6 block w-fit">
               <img 
                 src="/logo-footer.png" 
-                alt="HelloVA Logo" 
-                className="max-h-12 w-auto object-contain" 
+                alt="HelloVA Logo with Tagline" 
+                className="h-12 w-auto object-contain rounded-xl" 
               />
             </a>
 
