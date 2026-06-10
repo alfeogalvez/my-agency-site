@@ -221,9 +221,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - REDUCED BY 50% WITH CURVED EDGES */}
-            <a href="/" className="mb-6 block w-fit">
-              <img src="/logo-footer.png" alt="HelloVA Logo with Tagline" className="h-12 md:h-16 w-auto object-contain rounded-2xl" />
+            {/* FOOTER LOGO - Coded specifically for dark backgrounds */}
+            <a href="/" className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center relative mb-6 w-fit hover:opacity-80 transition">
+              <span className="text-white">Hello</span>
+              <span className="text-[#F58220]">VA</span>
+              <svg className="w-4 h-4 md:w-5 md:h-5 text-[#F58220] absolute -top-1 -right-4 md:-right-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M0 4h24L0 16z" />
+              </svg>
             </a>
 
             <p className="text-gray-400 max-w-sm">
