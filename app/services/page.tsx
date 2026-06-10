@@ -16,28 +16,32 @@ export default function Services() {
   ];
 
   return (
-    <main className={`min-h-screen bg-slate-50 text-slate-600 ${inter.className}`}>
+    <main className={`min-h-screen bg-gray-50 text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
       
       {/* MINI NAV */}
-      <nav className="border-b border-slate-200 bg-white sticky top-0 z-50">
+      <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <a href="/" className="text-2xl font-bold tracking-tight flex items-center relative">
-            <span className="text-slate-900">Hello</span>
-            <span className="text-orange-500">VA</span>
-            <svg className="w-3 h-3 text-orange-500 absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12l-24 12V0z" /></svg>
+          <a href="/" className="text-4xl font-bold tracking-tight flex items-center relative">
+            <span className="text-black">Hello</span>
+            <span className="text-[#F58220]">VA</span>
+            {/* Corrected Triangle */}
+            <svg className="w-4 h-4 text-[#F58220] absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24z" /></svg>
           </a>
-          <div className="flex gap-6 font-medium">
-            <a href="/" className="hover:text-orange-500 transition">Home</a>
-            <a href="/about" className="hover:text-orange-500 transition">About Us</a>
+          <div className="hidden md:flex gap-8 font-semibold">
+            <a href="/" className="hover:text-[#F58220] transition">Home</a>
+            <a href="/about" className="hover:text-[#F58220] transition">About Us</a>
+            <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] hover:bg-[#d66f1b] text-white px-5 py-2 rounded transition shadow-sm font-bold text-sm">
+              Book a Call
+            </a>
           </div>
         </div>
       </nav>
 
       {/* HEADER */}
-      <section className="pt-24 pb-16 bg-white border-b border-slate-100 text-center px-6">
+      <section className="pt-24 pb-16 bg-white border-b border-gray-100 text-center px-6">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">What Our Virtual Assistants Can Help With</h1>
-          <p className="text-xl text-slate-500">HelloVA connects you with reliable Filipino virtual assistants who support your business with day-to-day execution, so you can focus on growth and strategy.</p>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-6 tracking-tight">What Our Virtual Assistants Can Help With</h1>
+          <p className="text-xl text-gray-600">HelloVA connects you with reliable Filipino virtual assistants who support your business with day-to-day execution, so you can focus on growth and strategy.</p>
         </div>
       </section>
 
@@ -45,13 +49,13 @@ export default function Services() {
       <section className="py-20 max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviceBlocks.map((service, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm hover:shadow-lg hover:border-orange-300 transition duration-300">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">{service.title}</h3>
-              <p className="text-slate-500 mb-6 text-sm">{service.desc}</p>
+            <div key={idx} className="bg-white border border-gray-200 p-8 rounded-3xl shadow-sm hover:shadow-lg hover:border-[#F58220] transition duration-300">
+              <h3 className="text-2xl font-bold text-black mb-2">{service.title}</h3>
+              <p className="text-gray-600 mb-6 text-sm">{service.desc}</p>
               <ul className="space-y-2">
                 {service.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-slate-700 font-medium text-sm">
-                    <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <li key={i} className="flex items-start gap-3 text-black font-semibold text-sm">
+                    <svg className="w-5 h-5 text-[#F58220] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                     {item}
                   </li>
                 ))}
@@ -62,14 +66,56 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-900 text-center px-6 text-white border-t-[12px] border-orange-500">
+      <section className="py-24 bg-black text-center px-6 text-white border-t-[12px] border-[#F58220]">
         <h2 className="text-4xl font-extrabold mb-6">Ready to delegate and grow faster?</h2>
-        <p className="text-xl text-slate-400 mb-10">Let us match you with a virtual assistant who fits your business needs.</p>
+        <p className="text-xl text-gray-400 mb-10">Let us match you with a virtual assistant who fits your business needs.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-orange-500 hover:bg-orange-400 text-white px-8 py-4 rounded-xl font-bold transition">Book a Free Call</a>
+          <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] hover:bg-[#d66f1b] text-white px-8 py-4 rounded font-bold transition">Book a Free Call</a>
         </div>
       </section>
 
+      {/* FOOTER */}
+      <footer className="bg-black pt-20 pb-10 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
+          <div className="col-span-1 md:col-span-2">
+            <a href="/" className="text-3xl font-bold tracking-tight flex items-center relative mb-6 w-fit">
+              <span className="text-white">Hello</span>
+              <span className="text-[#F58220]">VA</span>
+              {/* Corrected Triangle */}
+              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24z" /></svg>
+            </a>
+            <p className="text-gray-400 max-w-sm">
+              Remote support solutions for growing businesses.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+            <ul className="space-y-4 text-gray-400 font-medium">
+              <li><a href="/services" className="hover:text-[#F58220] transition">Services</a></li>
+              <li><a href="/about" className="hover:text-[#F58220] transition">About Us</a></li>
+              <li><a href="/#how-it-works" className="hover:text-[#F58220] transition">How It Works</a></li>
+              <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
+            <ul className="space-y-4 text-gray-400 font-medium">
+              <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">support@hellova.co</a></li>
+              <li><a href="https://hellova.co/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Website</a></li>
+              <li><a href="https://linkedin.com/company/hellova-co" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/hellova.agency/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Instagram</a></li>
+              <li><a href="https://facebook.com/hellova.solutions" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+          <p>&copy; {new Date().getFullYear()} HelloVA. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

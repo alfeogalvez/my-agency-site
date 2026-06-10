@@ -10,12 +10,13 @@ export default function Home() {
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           
-          {/* LOGO (1.5x Larger) */}
+          {/* LOGO */}
           <a href="/" className="text-4xl font-bold tracking-tight flex items-center relative">
             <span className="text-black">Hello</span>
             <span className="text-[#F58220]">VA</span>
+            {/* Corrected Triangle */}
             <svg className="w-4 h-4 text-[#F58220] absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M24 12l-24 12V0z" />
+              <path d="M0 0v24h24z" />
             </svg>
           </a>
 
@@ -230,25 +231,30 @@ export default function Home() {
             <a href="/" className="text-3xl font-bold tracking-tight flex items-center relative mb-6 w-fit">
               <span className="text-white">Hello</span>
               <span className="text-[#F58220]">VA</span>
-              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12l-24 12V0z" /></svg>
+              {/* Corrected Triangle */}
+              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24z" /></svg>
             </a>
             <p className="text-gray-400 max-w-sm">
-              Focus On Growth. We’ll Handle The Rest. Reliable remote support for businesses ready to scale.
+              Remote support solutions for growing businesses.
             </p>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-            <ul className="space-y-4 text-gray-400">
+            <ul className="space-y-4 text-gray-400 font-medium">
               <li><a href="/services" className="hover:text-[#F58220] transition">Services</a></li>
               <li><a href="/about" className="hover:text-[#F58220] transition">About Us</a></li>
-              <li><a href="#how-it-works" className="hover:text-[#F58220] transition">How It Works</a></li>
+              <li><a href="/#how-it-works" className="hover:text-[#F58220] transition">How It Works</a></li>
+              <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Contact Info</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li><a href="mailto:hello@hellova.co" className="hover:text-[#F58220] transition">hello@hellova.co</a></li>
-              <li><a href="https://linkedin.com/company/hellova" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">LinkedIn</a></li>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Connect</h4>
+            <ul className="space-y-4 text-gray-400 font-medium">
+              <li><a href="mailto:support@hellova.co" className="hover:text-[#F58220] transition">support@hellova.co</a></li>
+              <li><a href="https://hellova.co/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Website</a></li>
+              <li><a href="https://linkedin.com/company/hellova-co" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/hellova.agency/" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Instagram</a></li>
+              <li><a href="https://facebook.com/hellova.solutions" target="_blank" rel="noreferrer" className="hover:text-[#F58220] transition">Facebook</a></li>
             </ul>
           </div>
         </div>
