@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <div className="py-4">
               <div className="text-5xl font-extrabold text-[#F58220] mb-2">300+</div>
-              <div className="text-black font-bold uppercase tracking-wider text-sm">VAs Placed</div>
+              <div className="text-black font-bold uppercase tracking-wider text-sm">VA's Placed</div>
             </div>
             <div className="py-4">
               <div className="text-5xl font-extrabold text-[#F58220] mb-2">98%</div>
