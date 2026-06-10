@@ -25,7 +25,7 @@ export default function Services() {
             <span className="text-black">Hello</span>
             <span className="text-[#F58220]">VA</span>
             {/* Corrected Triangle */}
-            <svg className="w-4 h-4 text-[#F58220] absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24z" /></svg>
+            <svg className="w-4 h-4 text-[#F58220] absolute -top-1 -right-4" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0h24L0 24z" /></svg>
           </a>
           <div className="hidden md:flex gap-8 font-semibold">
             <a href="/" className="hover:text-[#F58220] transition">Home</a>
@@ -82,7 +82,7 @@ export default function Services() {
               <span className="text-white">Hello</span>
               <span className="text-[#F58220]">VA</span>
               {/* Corrected Triangle */}
-              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24z" /></svg>
+              <svg className="w-3 h-3 text-[#F58220] absolute -top-1 -right-3" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0h24L0 24z" /></svg>
             </a>
             <p className="text-gray-400 max-w-sm">
               Remote support solutions for growing businesses.
