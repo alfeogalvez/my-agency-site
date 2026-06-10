@@ -221,15 +221,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
           <div className="col-span-1 md:col-span-2">
             
-            {/* FOOTER LOGO - Locked position fix for the triangle */}
-            <a href="/" className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center pr-4 relative mb-6 w-fit hover:opacity-80 transition">
-              <span className="text-white">Hello</span>
-              <span className="text-[#F58220]">VA</span>
-              <span className="absolute top-1 -right-1 text-[#F58220]">
-                <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M0 4h24L0 16z" />
-                </svg>
-              </span>
+           {/* FOOTER LOGO - Using the image with blended background */}
+            <a href="/" className="mb-6 block w-fit">
+              <img 
+                src="/logo-footer.jpg" 
+                alt="HelloVA Logo" 
+                className="h-24 md:h-32 w-auto object-contain rounded-2xl mix-blend-screen" 
+              />
             </a>
 
             <p className="text-gray-400 max-w-sm">
