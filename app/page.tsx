@@ -67,10 +67,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PERSONALITY / MESSAGING STRIP */}
-      <section className="bg-black py-16 px-6 text-center">
+     {/* PERSONALITY / MESSAGING STRIP */}
+      <section className="bg-[#F58220] py-16 px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-          Your Growth Needs Support. <span className="text-[#F58220]">Not More Hours In The Day.</span>
+          Your Growth Needs Support. Not More Hours In The Day.
         </h2>
       </section>
 
