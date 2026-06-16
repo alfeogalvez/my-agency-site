@@ -4,16 +4,19 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className={`min-h-screen bg-white text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`}>
+    // The style={{ colorScheme: 'light' }} forces mobile phones to stop turning your white header dark and your orange buttons red!
+    <main className={`min-h-screen bg-white text-black selection:bg-[#F58220]/20 selection:text-[#F58220] ${inter.className}`} style={{ colorScheme: 'light' }}>
       
-      {/* NAVIGATION - FIXED FOR MOBILE */}
-      <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* NAVIGATION - Professional Hamburger Menu for Mobile */}
+      <nav className="border-b border-gray-200 bg-white sticky top-0 z-50 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+          
           <a href="/" className="flex items-center shrink-0">
             <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-24 lg:h-28 w-auto object-contain shrink-0" />
           </a>
-          {/* Removed "hidden", added flex-wrap so links stay visible and adapt to mobile */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm font-semibold text-black">
+
+          {/* Desktop Links (Hidden on Mobile) */}
+          <div className="hidden md:flex items-center gap-4 text-sm font-semibold text-black">
             <a href="/services" className="hover:text-[#F58220] transition-colors">Services</a>
             <a href="/about" className="hover:text-[#F58220] transition-colors">About Us</a>
             <a href="#how-it-works" className="hover:text-[#F58220] transition-colors">How It Works</a>
@@ -21,6 +24,28 @@ export default function Home() {
               Book a Call
             </a>
           </div>
+
+          {/* Mobile Hamburger Button */}
+          <details className="md:hidden group">
+            <summary className="list-none cursor-pointer p-2 text-black focus:outline-none">
+              <svg className="w-8 h-8 block group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg className="w-8 h-8 hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </summary>
+            
+            {/* Mobile Dropdown Menu */}
+            <div className="absolute top-[100%] left-0 w-full bg-white border-b border-gray-200 px-6 py-8 flex flex-col gap-6 text-lg font-bold text-black shadow-2xl z-50">
+              <a href="/services" className="hover:text-[#F58220]">Services</a>
+              <a href="/about" className="hover:text-[#F58220]">About Us</a>
+              <a href="#how-it-works" className="hover:text-[#F58220]">How It Works</a>
+              <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] text-white px-6 py-4 rounded text-center shadow-md">
+                Book a Call
+              </a>
+            </div>
+          </details>
         </div>
       </nav>
 
@@ -161,19 +186,19 @@ export default function Home() {
           <form className="space-y-4">
             <div>
               <label className="block text-sm font-bold text-black mb-1">Name</label>
-              <input type="text" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="John Doe" />
+              <input type="text" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220] bg-white" placeholder="John Doe" />
             </div>
             <div>
               <label className="block text-sm font-bold text-black mb-1">Email</label>
-              <input type="email" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="john@company.com" />
+              <input type="email" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220] bg-white" placeholder="john@company.com" />
             </div>
             <div>
               <label className="block text-sm font-bold text-black mb-1">Company</label>
-              <input type="text" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="Your Business LLC" />
+              <input type="text" className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220] bg-white" placeholder="Your Business LLC" />
             </div>
             <div>
               <label className="block text-sm font-bold text-black mb-1">What tasks would you like help with?</label>
-              <textarea rows={4} className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="Admin, customer support, email management..."></textarea>
+              <textarea rows={4} className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220] bg-white" placeholder="Admin, customer support, email management..."></textarea>
             </div>
             <button type="button" className="w-full bg-[#F58220] hover:bg-[#d66f1b] text-white font-bold py-4 rounded transition text-lg mt-4">
               Let&apos;s Talk
