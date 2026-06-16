@@ -9,11 +9,9 @@ export default function Home() {
       {/* NAVIGATION */}
       <nav className="border-b border-gray-200 bg-white sticky top-0 z-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-          
           <a href="/" className="flex items-center shrink-0">
             <img src="/logo-header.jpg" alt="HelloVA Logo" className="h-16 md:h-24 lg:h-28 w-auto object-contain shrink-0" />
           </a>
-
           <div className="hidden md:flex items-center gap-4 text-sm font-semibold text-black">
             <a href="/services" className="hover:text-[#F58220] transition-colors">Services</a>
             <a href="/about" className="hover:text-[#F58220] transition-colors">About Us</a>
@@ -22,24 +20,16 @@ export default function Home() {
               Book a Call
             </a>
           </div>
-
           <details className="md:hidden group">
             <summary className="list-none cursor-pointer p-2 text-black focus:outline-none">
-              <svg className="w-8 h-8 block group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <svg className="w-8 h-8 hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <svg className="w-8 h-8 block group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+              <svg className="w-8 h-8 hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
             </summary>
-            
             <div className="absolute top-[100%] left-0 w-full bg-white border-b border-gray-200 px-6 py-8 flex flex-col gap-6 text-lg font-bold text-black shadow-2xl z-50">
               <a href="/services" className="hover:text-[#F58220]">Services</a>
               <a href="/about" className="hover:text-[#F58220]">About Us</a>
               <a href="#how-it-works" className="hover:text-[#F58220]">How It Works</a>
-              <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] text-white px-6 py-4 rounded text-center shadow-md">
-                Book a Call
-              </a>
+              <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] text-white px-6 py-4 rounded text-center shadow-md">Book a Call</a>
             </div>
           </details>
         </div>
@@ -77,29 +67,16 @@ export default function Home() {
             <h2 className="text-4xl font-extrabold text-black mb-4">How Our VAs Can Help</h2>
             <p className="text-lg text-gray-600">Comprehensive support designed to take the daily grind off your plate.</p>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Administrative Support",
-              "Executive Assistance",
-              "Customer Service",
-              "Marketing Support",
-              "CRM Management",
-              "Lead Generation",
-              "Social Media Support",
-              "Operations Support"
-            ].map((service, idx) => (
+            {["Administrative Support", "Executive Assistance", "Customer Service", "Marketing Support", "CRM Management", "Lead Generation", "Social Media Support", "Operations Support"].map((service, idx) => (
               <div key={idx} className="border-2 border-gray-100 hover:border-[#F58220] p-6 rounded-lg transition group cursor-default">
                 <div className="w-10 h-10 bg-gray-100 group-hover:bg-[#F58220]/10 flex items-center justify-center rounded mb-4 transition">
-                  <svg className="w-5 h-5 text-black group-hover:text-[#F58220] transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+                  <svg className="w-5 h-5 text-black group-hover:text-[#F58220] transition" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <h3 className="font-bold text-lg text-black">{service}</h3>
               </div>
             ))}
           </div>
-
           <div className="mt-12 text-center">
             <a href="/services" className="text-[#F58220] font-bold hover:underline inline-flex items-center gap-2">
               See detailed service breakdowns 
@@ -122,14 +99,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-black mb-12">Why Businesses Choose HelloVA</h2>
           <div className="grid sm:grid-cols-2 gap-6 text-left">
-            {[
-              "Pre-vetted Filipino VAs",
-              "Flexible Hiring Options",
-              "Cost-Effective Growth",
-              "Dedicated Matching Process",
-              "Ongoing Support",
-              "Quick Placement"
-            ].map((benefit, idx) => (
+            {["Pre-vetted Filipino VAs", "Flexible Hiring Options", "Cost-Effective Growth", "Dedicated Matching Process", "Ongoing Support", "Quick Placement"].map((benefit, idx) => (
               <div key={idx} className="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="w-8 h-8 rounded-full bg-[#F58220] flex items-center justify-center shrink-0">
                   <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
@@ -145,12 +115,9 @@ export default function Home() {
       <section id="how-it-works" className="py-24 bg-white px-6 border-b border-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-black mb-4">
-              How <span className="text-[#F58220]">HelloVA</span> Works
-            </h2>
+            <h2 className="text-4xl font-extrabold text-black mb-4">How <span className="text-[#F58220]">HelloVA</span> Works</h2>
             <p className="text-lg text-gray-600">A seamless process designed to get you the right support, fast.</p>
           </div>
-          
           <div className="flex flex-col lg:flex-row justify-between relative">
             <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gray-200 z-0"></div>
             {[
@@ -161,9 +128,7 @@ export default function Home() {
               { step: "5", title: "Grow", desc: "You reclaim your time and scale." }
             ].map((item, index) => (
               <div key={index} className="relative z-10 flex flex-col items-center text-center max-w-[200px] mx-auto mb-10 lg:mb-0 bg-white px-4">
-                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 border-4 border-white shadow-md">
-                  {item.step}
-                </div>
+                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 border-4 border-white shadow-md">{item.step}</div>
                 <h3 className="text-xl font-bold text-black mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
@@ -196,28 +161,20 @@ export default function Home() {
               <label className="block text-sm font-bold text-black mb-1">What tasks would you like help with?</label>
               <textarea rows={4} className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-[#F58220]" placeholder="Admin, customer support, email management..."></textarea>
             </div>
-            <button type="button" className="w-full bg-[#F58220] hover:bg-[#d66f1b] text-white font-bold py-4 rounded transition text-lg mt-4">
-              Let&apos;s Talk
-            </button>
+            <button type="button" className="w-full bg-[#F58220] hover:bg-[#d66f1b] text-white font-bold py-4 rounded transition text-lg mt-4">Let&apos;s Talk</button>
           </form>
         </div>
       </section>
 
-{/* FOOTER */}
+      {/* FOOTER */}
       <footer className="bg-black pt-16 pb-12 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-          
-          {/* Logo & Tagline (Takes up half the space on desktop) */}
           <div className="md:col-span-2 flex flex-col">
             <a href="/" className="block w-fit">
               <img src="/logo-footer.png" alt="HelloVA Logo" className="h-48 w-auto object-contain rounded-xl" />
             </a>
-            <p className="text-gray-400 text-sm max-w-xs -mt-2">
-              Remote support solutions for growing businesses.
-            </p>
+            <p className="text-gray-400 text-sm max-w-xs -mt-2">Remote support solutions for growing businesses.</p>
           </div>
-
-          {/* Quick Links (Takes up 1/4 of the space) */}
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
@@ -225,8 +182,6 @@ export default function Home() {
               <li><a href="/about" className="hover:text-[#F58220] transition-colors">About Us</a></li>
             </ul>
           </div>
-
-          {/* Connect (Takes up 1/4 of the space) */}
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Connect</h4>
             <div className="flex items-center gap-5">
@@ -244,6 +199,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-
         </div>
       </footer>
+    </main>
+  );
+}

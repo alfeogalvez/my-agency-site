@@ -27,11 +27,8 @@ export default function Services() {
           <div className="hidden md:flex gap-4 font-semibold text-sm">
             <a href="/" className="hover:text-[#F58220] transition-colors">Home</a>
             <a href="/about" className="hover:text-[#F58220] transition-colors">About Us</a>
-            <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] hover:bg-[#d66f1b] text-white px-5 py-2 rounded shadow-md font-bold transition-colors">
-              Book a Call
-            </a>
+            <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] hover:bg-[#d66f1b] text-white px-5 py-2 rounded shadow-md font-bold transition-colors">Book a Call</a>
           </div>
-
           <details className="md:hidden group">
             <summary className="list-none cursor-pointer p-2 text-black focus:outline-none">
               <svg className="w-8 h-8 block group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -40,9 +37,7 @@ export default function Services() {
             <div className="absolute top-[100%] left-0 w-full bg-white border-b border-gray-200 px-6 py-8 flex flex-col gap-6 text-lg font-bold text-black shadow-2xl z-50">
               <a href="/" className="hover:text-[#F58220]">Home</a>
               <a href="/about" className="hover:text-[#F58220]">About Us</a>
-              <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] text-white px-6 py-4 rounded text-center shadow-md">
-                Book a Call
-              </a>
+              <a href="https://calendly.com/hellova-ph/30min" target="_blank" rel="noreferrer" className="bg-[#F58220] text-white px-6 py-4 rounded text-center shadow-md">Book a Call</a>
             </div>
           </details>
         </div>
@@ -88,18 +83,12 @@ export default function Services() {
       {/* FOOTER */}
       <footer className="bg-black pt-16 pb-12 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-          
-          {/* Logo & Tagline (Takes up half the space on desktop) */}
           <div className="md:col-span-2 flex flex-col">
             <a href="/" className="block w-fit">
               <img src="/logo-footer.png" alt="HelloVA Logo" className="h-48 w-auto object-contain rounded-xl" />
             </a>
-            <p className="text-gray-400 text-sm max-w-xs -mt-2">
-              Remote support solutions for growing businesses.
-            </p>
+            <p className="text-gray-400 text-sm max-w-xs -mt-2">Remote support solutions for growing businesses.</p>
           </div>
-
-          {/* Quick Links (Takes up 1/4 of the space) */}
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
@@ -107,8 +96,6 @@ export default function Services() {
               <li><a href="/about" className="hover:text-[#F58220] transition-colors">About Us</a></li>
             </ul>
           </div>
-
-          {/* Connect (Takes up 1/4 of the space) */}
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Connect</h4>
             <div className="flex items-center gap-5">
@@ -126,6 +113,8 @@ export default function Services() {
               </a>
             </div>
           </div>
-
         </div>
       </footer>
+    </main>
+  );
+}
