@@ -100,7 +100,7 @@ export default function About() {
       <footer className="bg-black pt-16 pb-12 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
           <div className="md:col-span-2 flex flex-col">
-            <a href="/" className="block w-fit -mt-2">
+            <a href="/" className="block w-fit -mt-10">
               <img src="/logo-footer.png" alt="HelloVA Logo" className="w-56 md:w-64 h-auto object-contain rounded-xl" />
             </a>
             <p className="text-gray-400 text-sm max-w-xs mt-4">Remote support solutions for growing businesses.</p>
